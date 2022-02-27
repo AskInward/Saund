@@ -1,4 +1,8 @@
 
+h1{
+    color: rgb(92, 6, 172);
+    font-size:100px;
+}
 .horizontally {
  height: 80%;	
  overflow: hidden;
