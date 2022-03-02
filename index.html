@@ -1,17 +1,33 @@
- <html>
-<title>Weeeee!</title>
+<!DOCTYPE html>
+<html>
+    <title>
+        We are Venom!
+    </title>
+    <body>
+        <input type="text" id="usrinput" placeholder="Enter Password"> 
+        <br>
+        <input type="button" id="submitBtn" value="Submit">
+    </body>
+    <script>
+          const usrinput = document.querySelector("#usrinput");
+        document.querySelector("#submitBtn").onclick=()=>{
+          
+            if(btoa(usrinput.value)==="MTUwMzIx")
+             window.location="/index.html"
+            else
+            alert("Incorrect password!")
+        }
+        
+        usrinput.addEventListener('keyup',()=>{
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                // Cancel the default action, if needed
+                event.preventDefault();
+                // Trigger the button element with a click
+                document.getElementById("submitBtn").click();
+            }
+        })
+        
 
-<link rel="stylesheet" href="style.css">
-<body>
-    <h1>:)</h1>
-    <div class="horizontally">
-        <div class="inner">
-        <img src="KeyChainPrint.jpg" alt="meow"
-        width="500px">
-        </div>
-        </div>
-
-</body>
-
+    </script>
 </html>
- 
